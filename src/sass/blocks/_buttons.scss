@@ -1,0 +1,135 @@
+.btn {
+    width: 56px;
+    height: 56px;
+    border: 1px solid $main-color;
+    border-radius: 50%;
+    background-color: #fff;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s linear;
+
+    transition: transform 1s linear;
+
+    &-prev {
+        position: absolute;
+        left: 24px;
+
+        img {
+            transition: transform 0.4s linear;
+        }
+        &:hover img {
+            transform: translateX(-12px);
+        }
+    }
+
+    &-next {
+        position: absolute;
+        right: 24px;
+
+        img {
+            transition: transform 0.4s linear;
+        }
+        &:hover img {
+            transform: translateX(12px);
+        }
+    }
+
+    &:hover {
+        background-color: #f5f5f5;
+    }
+
+    &:active {
+        background-color: #dfdfdf;
+    }
+}
+
+.btn-dots {
+    width: 8px;
+    height: 8px;
+    border: 1px solid $main-color;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.btn-sales {
+    &.activeted {
+        background-color: $main-color;
+        color: #fff;
+    }
+    max-width: 128px;
+    padding: 0.92em 2.14em;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 21px;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s linear, color 0.3s linear;
+
+    &-prev {
+        margin-right: 10px;
+        img {
+            transition: transform 0.4s linear;
+        }
+        &:hover img {
+            transform: translateX(-12px);
+        }
+    }
+
+    &-next {
+        img {
+            transition: transform 0.4s linear;
+        }
+        &:hover img {
+            transform: translateX(12px);
+        }
+    }
+
+    &:hover {
+        background-color: #ddd;
+    }
+
+    &:active {
+        background-color: $main-color;
+        color: #fff;
+    }
+}
+
+.btn-favorites {
+    border: none;
+    background-color: inherit;
+
+    cursor: pointer;
+
+    transition: fill 0.3s linear;
+
+    &:hover .favorites path {
+        fill: #979797;
+    }
+
+    &:active .favorites path {
+        fill: #e24b33;
+    }
+}
+
+.btn-hits {
+    border: none;
+    background-color: inherit;
+
+    cursor: pointer;
+
+    transition: fill 0.3s linear;
+
+    &:hover .hits path {
+        fill: #979797;
+    }
+
+    &:active .hits path {
+        fill: #979797;
+    }
+}

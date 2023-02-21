@@ -1,0 +1,363 @@
+.product {
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    &-inner {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        flex-wrap: wrap;
+
+        &__img {
+            .sales-item--icons {
+                padding-bottom: 0.4em;
+            }
+            .product-img {
+                max-width: 550px;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+
+                    opacity: 0.2;
+
+                    border-bottom: 1px solid $main-color;
+                    border-right: 1px solid $main-color;
+
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+
+                    transform: translateY(-50%) rotate(135deg);
+                }
+
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+
+                    border-bottom: 1px solid $main-color;
+                    border-right: 1px solid $main-color;
+
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+
+                    transform: translateY(-50%) rotate(315deg);
+                }
+            }
+        }
+
+        &__descr {
+            span {
+                position: relative;
+                bottom: 3px;
+            }
+
+            .product-title {
+                margin-top: 1.41em;
+                font-family: 'Prata', serif;
+                font-weight: 400;
+                font-size: 2.28rem;
+            }
+
+            .product-article {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1rem;
+
+                color: #8f8f8f;
+            }
+
+            .product__offer {
+                position: relative;
+                max-height: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &:after {
+                    content: '';
+                    width: 100%;
+                    height: 3px;
+
+                    background-color: $second-color;
+                    position: absolute;
+                    bottom: -25px;
+                    left: 0;
+                }
+                .product-timer {
+                    max-width: 224px;
+                    background-color: $second-color;
+                    display: flex;
+                    padding: 0.85em 1em;
+                    gap: 10px;
+                    align-items: center;
+
+                    div {
+                        display: inherit;
+                        flex-direction: column;
+                        background-color: #fff;
+                        padding: 0.42em 0.5em 0.35em;
+
+                        border: 1px solid #d0d0d0;
+
+                        text-align: center;
+
+                        .bold {
+                            font-weight: 700;
+                            font-size: 1.14rem;
+                        }
+
+                        span {
+                            font-weight: 300;
+                            font-size: 0.78rem;
+                        }
+                    }
+                }
+            }
+
+            .product-color {
+                margin-top: 3.35em;
+                h2 {
+                    margin-bottom: 0.6em;
+                    font-size: 0.85rem;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+
+                .color-inner {
+                    display: flex;
+                    gap: 10px;
+
+                    .color-item {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 32px;
+                        height: 32px;
+                        border: 1px solid #dadada;
+                        border-radius: 50%;
+
+                        &:hover {
+                            border: 1px solid $main-color;
+                        }
+                    }
+
+                    .color-radius {
+                        width: 24px;
+                        height: 24px;
+
+                        border-radius: 50%;
+                    }
+
+                    .color-1 {
+                        background-color: #d9d9d9;
+                    }
+
+                    .color-2 {
+                        background-color: #f1cb7e;
+                    }
+
+                    .color-3 {
+                        background-color: #ea8c48;
+                    }
+
+                    .color-4 {
+                        background-color: #a7e492;
+                    }
+                }
+            }
+
+            .product-size {
+                display: flex;
+                align-items: baseline;
+                gap: 10px;
+                margin-top: 2.35em;
+                &-title {
+                    margin-bottom: 0.6em;
+                    font-size: 0.85rem;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+
+                .hint {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 18px;
+                    background-color: $second-color;
+                    border-radius: 50%;
+                    transition: background-color 0.3s linear;
+
+                    &:hover {
+                        background-color: #d3d3d3;
+                    }
+                    a {
+                        display: block;
+                        padding: 0 0.2em;
+                    }
+
+                    .tooltip {
+                        display: none;
+                        opacity: 0;
+                        max-width: 223px;
+                        height: auto;
+                        padding: 1.71em;
+                        background: #fff;
+                        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+                        position: absolute;
+                        top: -185px;
+                        right: -95px;
+
+                        &.open {
+                            display: block;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+            .size-list {
+                margin-top: 0.25em;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .btn-size {
+                    display: inline-block;
+                    max-width: 50px;
+                    width: 100%;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    padding: 0.64em 0.44em 0.64em 0.71em;
+
+                    margin-bottom: 10px;
+
+                    cursor: pointer;
+
+                    border: 2px solid #dadada;
+                    background: transparent;
+
+                    transition: border 0.2s linear;
+
+                    &.active {
+                        background-color: $main-color;
+                        color: #fff;
+                        border: 2px solid $main-color;
+                    }
+
+                    &:hover {
+                        border: 2px solid $main-color;
+                    }
+                }
+            }
+        }
+
+        .size-bottom {
+            margin-top: 3.9em;
+            display: flex;
+            gap: 40px;
+
+            &__btns {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .btn-basket {
+                    display: block;
+                    max-width: 400px;
+                    width: 100%;
+                    padding: 1.5em 11em;
+
+                    font-weight: 500;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    color: #fff;
+
+                    border: 1px solid $main-color;
+                    background: $main-color;
+
+                    transition: background 0.3s linear;
+
+                    &:hover {
+                        background: #505050;
+                    }
+
+                    &:active {
+                        background: #000;
+                    }
+                }
+
+                .btn-buy {
+                    display: block;
+                    max-width: 400px;
+                    width: 100%;
+                    padding: 1.5em 9em;
+
+                    font-weight: 500;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    color: $main-color;
+
+                    border: 1px solid $main-color;
+                    background: #fff;
+
+                    transition: background 0.3s linear, color 0.3s linear;
+
+                    &:hover {
+                        background: $main-color;
+                        color: #fff;
+                    }
+
+                    &:active {
+                        background: #000;
+                    }
+                }
+            }
+
+            &__social {
+                display: flex;
+                flex-direction: column;
+                gap: 26px;
+
+                div {
+                    display: flex;
+                    gap: 10px;
+
+                    transition: fill 0.2s linear;
+
+                    svg {
+                        cursor: pointer;
+                    }
+
+                    a {
+                        transition: color 0.3s linear;
+                        &:hover {
+                            color: #979797;
+                        }
+                        &:active {
+                            color: $main-color;
+                        }
+                    }
+
+                    &:hover svg path {
+                        fill: #979797;
+                    }
+
+                    &:active svg path {
+                        fill: #e24b33;
+                    }
+                }
+            }
+        }
+    }
+}

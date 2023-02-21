@@ -1,0 +1,267 @@
+.header {
+    margin-top: 1.71em;
+    height: 100vh;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+
+        .header-top {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 0.85em;
+
+            .header-dropdown {
+                &__click {
+                    background: none;
+                    border: none;
+                    outline: none;
+
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: $main-color;
+
+                    cursor: pointer;
+
+                    position: relative;
+
+                    &:before {
+                        content: '';
+                        width: 12px;
+                        height: 16px;
+
+                        background-image: url('../../icons/place-icon.svg');
+                        background-repeat: no-repeat;
+
+                        position: absolute;
+                        top: 0;
+                        left: -17px;
+
+                        transition: opacity 0.3s linear;
+                    }
+
+                    &:hover:before {
+                        opacity: 0.5;
+                    }
+                }
+
+                &__list {
+                    position: absolute;
+                    z-index: 3;
+                    left: 8.3em;
+                    margin-top: 0.85em;
+                    background-color: #fff;
+
+                    transform: scaleY(0);
+                    transform-origin: top;
+                    transition: 0.2s;
+
+                    box-shadow: 0px 7px 11px 2px $second-color;
+
+                    .header-dropdown__links {
+                        display: block;
+                        width: 100%;
+                        background-color: #fff;
+
+                        text-align: left;
+
+                        padding: 0.8em 2em;
+
+                        background: none;
+                        border: none;
+                        outline: none;
+
+                        font-size: 1rem;
+                        font-weight: 400;
+                        color: $main-color;
+
+                        transition: backgrounf 0.2s linear;
+                        &:hover {
+                            background-color: #fafafa;
+                        }
+                    }
+                }
+            }
+            .header-dropdown__list.newlist {
+                transform: scaleY(1);
+            }
+
+            &__phone {
+                position: relative;
+                &:before {
+                    content: '';
+                    width: 16px;
+                    height: 16px;
+
+                    background-image: url('../../icons/phone-icon.svg');
+                    background-repeat: no-repeat;
+
+                    position: absolute;
+                    top: 2px;
+                    left: -20px;
+
+                    transition: opacity 0.3s linear;
+                }
+
+                &:hover:before {
+                    opacity: 0.5;
+                }
+            }
+
+            &__login {
+                position: relative;
+                display: flex;
+                gap: 20px;
+
+                button:last-child::after {
+                    content: '';
+                    width: 1px;
+                    height: 10px;
+                    background-color: $main-color;
+
+                    position: absolute;
+                    top: 4px;
+                    left: 50px;
+                }
+                button {
+                    background: none;
+                    border: none;
+                    outline: none;
+
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: $main-color;
+
+                    transition: opacity 0.3s linear;
+
+                    cursor: pointer;
+                    &:hover {
+                        opacity: 0.5;
+                    }
+                }
+            }
+
+            &__menu {
+                display: flex;
+                gap: 30px;
+
+                a:first-child {
+                    position: relative;
+                    &:after {
+                        content: '';
+                        width: 19px;
+                        height: 19px;
+
+                        background-image: url('../../icons/number-icon.svg');
+
+                        position: absolute;
+                        top: -7px;
+                        right: -9px;
+                    }
+                }
+
+                a {
+                    cursor: pointer;
+                    padding: 0.15em 0.3em;
+                    transition: background 0.3s linear;
+
+                    &:hover {
+                        background-color: $second-color;
+                    }
+                }
+            }
+        }
+
+        .header-nav {
+            display: flex;
+            background-color: $second-color;
+            justify-content: space-between;
+            margin-top: 2.3em;
+            padding: 1.78em 3.57em;
+
+            .burger {
+                display: none;
+                position: relative;
+                width: 40px;
+                height: 40px;
+                border: none;
+            }
+
+            .nav {
+                display: flex;
+                gap: 30px;
+
+                .close {
+                    display: none;
+                    position: absolute;
+                    top: 32px;
+                    width: 32px;
+                    height: 32px;
+                    opacity: 0.3;
+                    transition: opacite 0.3s linear;
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    &:before,
+                    &:after {
+                        position: absolute;
+                        left: 15px;
+                        content: ' ';
+                        height: 33px;
+                        width: 2px;
+                        background-color: #333;
+                    }
+
+                    &:before {
+                        transform: rotate(45deg);
+                    }
+
+                    &:after {
+                        transform: rotate(-45deg);
+                    }
+                }
+
+                &-link {
+                    font-size: 0.92rem;
+                    font-weight: 500;
+                    text-transform: uppercase;
+
+                    transition: opacity 0.3s linear;
+
+                    &:hover {
+                        opacity: 0.5;
+                    }
+                }
+            }
+
+            .seacrh-block {
+                display: flex;
+                align-items: center;
+                .seacrh {
+                    margin-left: 0.92em;
+
+                    font-size: 1rem;
+                    line-height: 1.1;
+                    font-weight: 400;
+                    color: #a2a2a2;
+
+                    background: transparent;
+                    border: none;
+
+                    &:focus {
+                        outline: none;
+                        border-bottom: 1px solid $main-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header-dropdown__click.newlist .header-dropdown__click-icon {
+    transform: rotate(180deg);
+    margin-bottom: 2px;
+}

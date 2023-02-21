@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>GoldyStore</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Prata&family=Roboto+Condensed:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.min.css" />
+    </head>
+    <body>
+        <div class="page">
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="header-top">
+                            <div class="header-dropdown">
+                                <button
+                                    class="header-dropdown__click"
+                                    type="submit"
+                                >
+                                    Санкт-Петербург
+                                    <img
+                                        class="header-dropdown__click-icon"
+                                        src="./icons/arrow-icon.svg"
+                                        alt="arrow"
+                                    />
+                                </button>
+                                <div class="header-dropdown__list">
+                                    <button
+                                        class="header-dropdown__links"
+                                        type="submit"
+                                    >
+                                        Санкт-Петербург
+                                    </button>
+                                    <button
+                                        class="header-dropdown__links"
+                                        type="submit"
+                                    >
+                                        Москва
+                                    </button>
+                                    <button
+                                        class="header-dropdown__links"
+                                        type="submit"
+                                    >
+                                        Нижний-Новгород
+                                    </button>
+                                    <button
+                                        class="header-dropdown__links"
+                                        type="submit"
+                                    >
+                                        Ростов-на-Дону
+                                    </button>
+                                </div>
+                            </div>
+
+                            <a class="header-top__phone" href="tel:+88007852535"
+                                >8 800 785-25-35</a
+                            >
+
+                            <img
+                                class="header-top__logo"
+                                src="./img/logo.png"
+                                alt="logo"
+                            />
+
+                            <div class="header-top__login">
+                                <button type="submit">Войти</button>
+                                <button type="submit">Регистрация</button>
+                            </div>
+
+                            <div class="header-top__menu">
+                                <a href="#"
+                                    ><svg
+                                        class="svg"
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 20 20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M9.99998 17.5C9.46248 17.0233 8.85498 16.5275 8.21248 16H8.20415C5.94165 14.15 3.37748 12.0566 2.24498 9.54829C1.87291 8.74973 1.67573 7.8809 1.66664 6.99996C1.66415 5.7912 2.14895 4.63245 3.01149 3.7856C3.87402 2.93875 5.04147 2.47529 6.24998 2.49996C7.23384 2.50151 8.19651 2.78586 9.02331 3.31913C9.38662 3.55493 9.71533 3.84017 9.99998 4.16663C10.2862 3.84145 10.615 3.55638 10.9775 3.31913C11.8039 2.78576 12.7664 2.50139 13.75 2.49996C14.9585 2.47529 16.1259 2.93875 16.9885 3.7856C17.851 4.63245 18.3358 5.7912 18.3333 6.99996C18.3248 7.88231 18.1276 8.75262 17.755 9.55246C16.6225 12.0608 14.0591 14.1533 11.7966 16L11.7883 16.0066C11.145 16.5308 10.5383 17.0266 10.0008 17.5066L9.99998 17.5ZM6.24998 4.16663C5.47374 4.15691 4.72504 4.454 4.16665 4.99329C3.62863 5.52176 3.32794 6.24583 3.33324 6.99996C3.34275 7.64204 3.48817 8.27484 3.75998 8.85663C4.29457 9.93888 5.0159 10.9183 5.89081 11.75C6.71665 12.5833 7.66665 13.39 8.48831 14.0683C8.71581 14.2558 8.94748 14.445 9.17915 14.6341L9.32498 14.7533C9.54748 14.935 9.77748 15.1233 9.99998 15.3083L10.0108 15.2983L10.0158 15.2941H10.0208L10.0283 15.2883H10.0325H10.0366L10.0516 15.2758L10.0858 15.2483L10.0916 15.2433L10.1008 15.2366H10.1058L10.1133 15.23L10.6666 14.7758L10.8116 14.6566C11.0458 14.4658 11.2775 14.2766 11.505 14.0891C12.3266 13.4108 13.2775 12.605 14.1033 11.7675C14.9783 10.9363 15.6997 9.95705 16.2341 8.87496C16.5109 8.28813 16.6584 7.64871 16.6667 6.99996C16.6701 6.24816 16.3696 5.52687 15.8333 4.99996C15.276 4.45823 14.5272 4.1587 13.75 4.16663C12.8016 4.15857 11.8949 4.5561 11.2583 5.25913L9.99998 6.70913L8.74165 5.25913C8.10503 4.5561 7.19838 4.15857 6.24998 4.16663Z"
+                                            fill="#303030"
+                                        /></svg
+                                ></a>
+                                <a href="#"
+                                    ><svg
+                                        class="svg"
+                                        width="13"
+                                        height="15"
+                                        viewBox="0 0 13 15"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <line
+                                            x1="1.1"
+                                            y1="8"
+                                            x2="1.1"
+                                            y2="15"
+                                            stroke="#303030"
+                                            stroke-width="2.2"
+                                        />
+                                        <line
+                                            x1="6.1"
+                                            y1="-4.80825e-08"
+                                            x2="6.1"
+                                            y2="15"
+                                            stroke="#303030"
+                                            stroke-width="2.2"
+                                        />
+                                        <line
+                                            x1="11.1"
+                                            y1="3"
+                                            x2="11.1"
+                                            y2="15"
+                                            stroke="#303030"
+                                            stroke-width="2.2"
+                                        />
+                                    </svg>
+                                </a>
+                                <a href="#"
+                                    ><svg
+                                        class="svg"
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 20 20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <rect
+                                            x="2"
+                                            y="5"
+                                            width="16"
+                                            height="13"
+                                            rx="1"
+                                            fill="white"
+                                        />
+                                        <mask
+                                            id="path-2-inside-1_4002_17"
+                                            fill="white"
+                                        >
+                                            <rect
+                                                x="2"
+                                                y="5"
+                                                width="16"
+                                                height="13"
+                                                rx="1"
+                                            />
+                                        </mask>
+                                        <rect
+                                            x="2"
+                                            y="5"
+                                            width="16"
+                                            height="13"
+                                            rx="1"
+                                            stroke="#303030"
+                                            stroke-width="3.2"
+                                            mask="url(#path-2-inside-1_4002_17)"
+                                        />
+                                        <path
+                                            d="M6 9L6 6C6 3.79086 7.79086 2 10 2V2C12.2091 2 14 3.79086 14 6L14 9"
+                                            stroke="#303030"
+                                            stroke-width="1.6"
+                                        /></svg
+                                ></a>
+                            </div>
+                        </div>
+
+                        <div class="header-nav">
+                            <button class="burger">Меню</button>
+                            <nav class="nav">
+                                <span class="close"></span>
+                                <a class="nav-link" href="#">Каталог</a>
+                                <a class="nav-link" href="#">Акции</a>
+                                <a class="nav-link" href="#">Бренды</a>
+                                <a class="nav-link" href="#">Магазины</a>
+                                <a class="nav-link" href="#">О нас</a>
+                                <a class="nav-link" href="#"
+                                    >Доставка и оплата</a
+                                >
+                                <a class="nav-link" href="#">Статьи</a>
+                            </nav>
+                            <div class="seacrh-block">
+                                <img
+                                    src="./icons/search-icon.svg"
+                                    alt="search"
+                                />
+                                <input
+                                    placeholder="Поиск по сайту"
+                                    class="seacrh"
+                                    type="search"
+                                    name="search"
+                                    id=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="container">
+                        <div class="slider-inner">
+                            <button class="btn btn-prev slider-btn-prev">
+                                <img src="./icons/prev.svg" alt="arrow" />
+                            </button>
+                            <div class="slider-text">
+                                <span class="slider-suptitle"
+                                    >Суперскидка до 60%</span
+                                >
+                                <h1 class="slider-title">НА БРИЛЛИАНТЫ</h1>
+                                <button class="slider-btn">подробнее</button>
+                            </div>
+                            <div class="slider-content">
+                                <div class="slider-pictures">
+                                    <img
+                                        class="slider-img"
+                                        src="./img/ring.png"
+                                        alt="pic1"
+                                    />
+
+                                    <img
+                                        class="slider-img"
+                                        src="./img/ring.png"
+                                        alt="pic2"
+                                    />
+
+                                    <img
+                                        class="slider-img"
+                                        src="./img/ring.png"
+                                        alt="pic3"
+                                    />
+                                </div>
+                                <div class="slider-bottom--btn">
+                                    <button class="btn-dots active"></button>
+                                    <button class="btn-dots"></button>
+                                    <button class="btn-dots"></button>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-next slider-btn-next">
+                                <img src="./icons/next.svg" alt="arrow" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <div class="container">
+                    <section class="popular">
+                        <h2 class="section-title">Популярные категории</h2>
+                        <div class="popular-inner">
+                            <div class="popular-item">
+                                <img
+                                    class="popular-item__img"
+                                    src="./img/rings-1.png"
+                                    alt="rings"
+                                />
+                                <p class="popular-item__text">Кольца</p>
+                            </div>
+
+                            <div class="popular-item">
+                                <img
+                                    class="popular-item__img"
+                                    src="./img/shakles-2.png"
+                                    alt="snakles"
+                                />
+                                <p class="popular-item__text">Серьги</p>
+                            </div>
+
+                            <div class="popular-item">
+                                <img
+                                    class="popular-item__img"
+                                    src="./img/rings-3.png"
+                                    alt="rings"
+                                />
+                                <p class="popular-item__text">
+                                    Помолвочные кольца
+                                </p>
+                            </div>
+
+                            <div class="popular-item">
+                                <img
+                                    class="popular-item__img"
+                                    src="./img/bracelet-4.png"
+                                    alt="bracelet"
+                                />
+                                <p class="popular-item__text">Браслеты</p>
+                            </div>
+
+                            <div class="popular-item">
+                                <img
+                                    class="popular-item__img"
+                                    src="./img/necklace-5.png"
+                                    alt="necklace"
+                                />
+                                <p class="popular-item__text">
+                                    Колье и подвески
+                                </p>
+                            </div>
+
+                            <div class="popular-item">
+                                <img
+                                    class="popular-item__img"
+                                    src="./img/watch-6.png"
+                                    alt="watch"
+                                />
+                                <p class="popular-item__text">Часы</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="sales">
+                        <h2 class="section-title">Распродажа</h2>
+                        <div class="sales-category">
+                            <div>
+                                <button class="btn-sales activeted">
+                                    Кольца
+                                </button>
+                                <button class="btn-sales">Серьги</button>
+                                <button class="btn-sales">Браслеты</button>
+                                <button class="btn-sales">Часы</button>
+                            </div>
+
+                            <div>
+                                <button class="btn btn-sales-prev">
+                                    <img src="./icons/prev.svg" alt="arrow" />
+                                </button>
+                                <button class="btn btn-sales-next">
+                                    <img src="./icons/next.svg" alt="arrow" />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="sales-inner">
+                            <div class="sales-item">
+                                <div class="sales-item__header">
+                                    <div class="sales-item--icons">
+                                        <span class="sales-icon--sale"
+                                            >Sale</span
+                                        >
+                                        <span class="sales-icon--hits"
+                                            >Хиты</span
+                                        >
+                                    </div>
+                                    <div class="sales-item--favorites">
+                                        <button
+                                            class="btn-favorites"
+                                            type="submit"
+                                        >
+                                            <svg
+                                                class="favorites"
+                                                width="20"
+                                                height="18"
+                                                viewBox="0 0 20 18"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+                                                    fill="#C9C9C9"
+                                                />
+                                            </svg>
+                                        </button>
+                                        <button class="btn-hits" type="submit">
+                                            <svg
+                                                class="hits"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M13.0044 3.5C13.0044 2.94772 12.5567 2.5 12.0044 2.5C11.4521 2.5 11.0044 2.94772 11.0044 3.5V5.54989C10.0448 5.64609 9.12848 5.87731 8.27405 6.20772L7.4446 5.05037C7.12289 4.60146 6.49817 4.49836 6.04927 4.82007C5.60036 5.14179 5.49726 5.76651 5.81898 6.21541L6.45792 7.10695C5.92702 7.43178 5.434 7.79271 4.98539 8.17708C3.24791 9.6658 2 11.6684 2 13.5C2 15.3316 3.24791 17.3342 4.98539 18.8229C6.76222 20.3453 9.23586 21.5 12 21.5C14.7639 21.5 17.2376 20.3462 19.0145 18.8241C20.7522 17.3355 22 15.333 22 13.5C22 11.667 20.7522 9.66444 19.0145 8.17591C18.6848 7.89346 18.331 7.62368 17.9559 7.37161L18.6253 6.43759C18.947 5.98869 18.844 5.36398 18.3951 5.04225C17.9462 4.72053 17.3214 4.82362 16.9997 5.27252L16.1918 6.39975C15.2102 5.96793 14.1376 5.66528 13.0044 5.55075V3.5ZM12 9.5C9.79086 9.5 8 11.2909 8 13.5C8 15.7091 9.79086 17.5 12 17.5C14.2091 17.5 16 15.7091 16 13.5C16 11.2909 14.2091 9.5 12 9.5Z"
+                                                    fill="#C9C9C9"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="sales-item--img">
+                                    <img
+                                        class="sales-item--img"
+                                        src="./img/ring.jpg"
+                                        alt="rings"
+                                    />
+                                    <div class="sales-bottom--btn">
+                                        <button
+                                            class="btn-dots active"
+                                        ></button>
+                                        <button class="btn-dots"></button>
+                                        <button class="btn-dots"></button>
+                                    </div>
+                                </div>
+
+                                <div class="sales-item--price">
+                                    <p>41 000 ₽<span>65 000 ₽</span></p>
+                                    <span class="sales-icon--save">-45%</span>
+                                </div>
+                                <div class="sales-item--text">
+                                    <p>
+                                        Стильное кольцо из белого золота
+                                        c бриллиантами
+                                    </p>
+                                </div>
+                                <div class="sales-dropdown">
+                                    <div class="select">
+                                        <span class="selected"
+                                            >Белое золото</span
+                                        >
+                                        <div class="caret"></div>
+                                    </div>
+                                    <ul class="menu">
+                                        <li class="active">Белое золото</li>
+                                        <li>Желтое золото</li>
+                                        <li>Серебро</li>
+                                    </ul>
+                                </div>
+
+                                <div class="sales-dropdown">
+                                    <div class="select">
+                                        <span class="selected">Размер: 16</span>
+                                        <div class="caret"></div>
+                                    </div>
+                                    <ul class="menu">
+                                        <li class="active">Размер: 16</li>
+                                        <li>Размер: 18</li>
+                                        <li>Размер: 20</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="sales-item">
+                                <div class="sales-item__header">
+                                    <div class="sales-item--icons">
+                                        <span class="sales-icon--hits"
+                                            >Хиты</span
+                                        >
+                                    </div>
+                                    <div class="sales-item--favorites">
+                                        <button
+                                            class="btn-favorites"
+                                            type="submit"
+                                        >
+                                            <svg
+                                                class="favorites"
+                                                width="20"
+                                                height="18"
+                                                viewBox="0 0 20 18"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+                                                    fill="#C9C9C9"
+                                                />
+                                            </svg>
+                                        </button>
+                                        <button class="btn-hits" type="submit">
+                                            <svg
+                                                class="hits"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M13.0044 3.5C13.0044 2.94772 12.5567 2.5 12.0044 2.5C11.4521 2.5 11.0044 2.94772 11.0044 3.5V5.54989C10.0448 5.64609 9.12848 5.87731 8.27405 6.20772L7.4446 5.05037C7.12289 4.60146 6.49817 4.49836 6.04927 4.82007C5.60036 5.14179 5.49726 5.76651 5.81898 6.21541L6.45792 7.10695C5.92702 7.43178 5.434 7.79271 4.98539 8.17708C3.24791 9.6658 2 11.6684 2 13.5C2 15.3316 3.24791 17.3342 4.98539 18.8229C6.76222 20.3453 9.23586 21.5 12 21.5C14.7639 21.5 17.2376 20.3462 19.0145 18.8241C20.7522 17.3355 22 15.333 22 13.5C22 11.667 20.7522 9.66444 19.0145 8.17591C18.6848 7.89346 18.331 7.62368 17.9559 7.37161L18.6253 6.43759C18.947 5.98869 18.844 5.36398 18.3951 5.04225C17.9462 4.72053 17.3214 4.82362 16.9997 5.27252L16.1918 6.39975C15.2102 5.96793 14.1376 5.66528 13.0044 5.55075V3.5ZM12 9.5C9.79086 9.5 8 11.2909 8 13.5C8 15.7091 9.79086 17.5 12 17.5C14.2091 17.5 16 15.7091 16 13.5C16 11.2909 14.2091 9.5 12 9.5Z"
+                                                    fill="#C9C9C9"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="sales-item--img">
+                                    <img
+                                        class="sales-item--img"
+                                        src="./img/ring-2.jpg"
+                                        alt="rings"
+                                    />
+                                    <div class="sales-bottom--btn">
+                                        <button
+                                            class="btn-dots active"
+                                        ></button>
+                                        <button class="btn-dots"></button>
+                                        <button class="btn-dots"></button>
+                                    </div>
+                                </div>
+
+                                <div class="sales-item--price">
+                                    <p>56 000 ₽</p>
+                                </div>
+                                <div class="sales-item--text">
+                                    <p>
+                                        Стильное кольцо из белого золота
+                                        c бриллиантами
+                                    </p>
+                                </div>
+                                <div class="sales-dropdown">
+                                    <div class="select">
+                                        <span class="selected"
+                                            >Белое золото</span
+                                        >
+                                        <div class="caret"></div>
+                                    </div>
+                                    <ul class="menu">
+                                        <li class="active">Белое золото</li>
+                                        <li>Желтое золото</li>
+                                        <li>Серебро</li>
+                                    </ul>
+                                </div>
+
+                                <div class="sales-dropdown">
+                                    <div class="select">
+                                        <span class="selected">Размер: 16</span>
+                                        <div class="caret"></div>
+                                    </div>
+                                    <ul class="menu">
+                                        <li class="active">Размер: 16</li>
+                                        <li>Размер: 18</li>
+                                        <li>Размер: 20</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="sales-item">
+                                <div class="sales-item__header">
+                                    <div class="sales-item--icons">
+                                        <span class="sales-icon--hits"
+                                            >Хиты</span
+                                        >
+                                    </div>
+                                    <div class="sales-item--favorites">
+                                        <button
+                                            class="btn-favorites"
+                                            type="submit"
+                                        >
+                                            <svg
+                                                class="favorites"
+                                                width="20"
+                                                height="18"
+                                                viewBox="0 0 20 18"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+                                                    fill="#C9C9C9"
+                                                />
+                                            </svg>
+                                        </button>
+                                        <button class="btn-hits" type="submit">
+                                            <svg
+                                                class="hits"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M13.0044 3.5C13.0044 2.94772 12.5567 2.5 12.0044 2.5C11.4521 2.5 11.0044 2.94772 11.0044 3.5V5.54989C10.0448 5.64609 9.12848 5.87731 8.27405 6.20772L7.4446 5.05037C7.12289 4.60146 6.49817 4.49836 6.04927 4.82007C5.60036 5.14179 5.49726 5.76651 5.81898 6.21541L6.45792 7.10695C5.92702 7.43178 5.434 7.79271 4.98539 8.17708C3.24791 9.6658 2 11.6684 2 13.5C2 15.3316 3.24791 17.3342 4.98539 18.8229C6.76222 20.3453 9.23586 21.5 12 21.5C14.7639 21.5 17.2376 20.3462 19.0145 18.8241C20.7522 17.3355 22 15.333 22 13.5C22 11.667 20.7522 9.66444 19.0145 8.17591C18.6848 7.89346 18.331 7.62368 17.9559 7.37161L18.6253 6.43759C18.947 5.98869 18.844 5.36398 18.3951 5.04225C17.9462 4.72053 17.3214 4.82362 16.9997 5.27252L16.1918 6.39975C15.2102 5.96793 14.1376 5.66528 13.0044 5.55075V3.5ZM12 9.5C9.79086 9.5 8 11.2909 8 13.5C8 15.7091 9.79086 17.5 12 17.5C14.2091 17.5 16 15.7091 16 13.5C16 11.2909 14.2091 9.5 12 9.5Z"
+                                                    fill="#C9C9C9"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="sales-item--img">
+                                    <img
+                                        class="sales-item--img"
+                                        src="./img/ring-3.jpg"
+                                        alt="rings"
+                                    />
+                                    <div class="sales-bottom--btn">
+                                        <button
+                                            class="btn-dots active"
+                                        ></button>
+                                        <button class="btn-dots"></button>
+                                        <button class="btn-dots"></button>
+                                    </div>
+                                </div>
+
+                                <div class="sales-item--price">
+                                    <p>37 500 ₽</p>
+                                </div>
+                                <div class="sales-item--text">
+                                    <p>
+                                        Стильное кольцо из белого золота
+                                        c бриллиантами
+                                    </p>
+                                </div>
+                                <div class="sales-dropdown">
+                                    <div class="select">
+                                        <span class="selected"
+                                            >Белое золото</span
+                                        >
+                                        <div class="caret"></div>
+                                    </div>
+                                    <ul class="menu">
+                                        <li class="active">Белое золото</li>
+                                        <li>Желтое золото</li>
+                                        <li>Серебро</li>
+                                    </ul>
+                                </div>
+
+                                <div class="sales-dropdown">
+                                    <div class="select">
+                                        <span class="selected">Размер: 16</span>
+                                        <div class="caret"></div>
+                                    </div>
+                                    <ul class="menu">
+                                        <li class="active">Размер: 16</li>
+                                        <li>Размер: 18</li>
+                                        <li>Размер: 20</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="sales-item">
+                                <div class="sales-item__header">
+                                    <div class="sales-item--icons">
+                                        <span class="sales-icon--hits"
+                                            >Хиты</span
+                                        >
+                                    </div>
+                                    <div class="sales-item--favorites">
+                                        <button
+                                            class="btn-favorites"
+                                            type="submit"
+                                        >
+                                            <svg
+                                                class="favorites"
+                                                width="20"
+                                                height="18"
+                                                viewBox="0 0 20 18"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+                                                    fill="#C9C9C9"
+                                                />
+                                            </svg>
+                                        </button>
+                                        <button class="btn-hits" type="submit">
+                                            <svg
+                                                class="hits"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M13.0044 3.5C13.0044 2.94772 12.5567 2.5 12.0044 2.5C11.4521 2.5 11.0044 2.94772 11.0044 3.5V5.54989C10.0448 5.64609 9.12848 5.87731 8.27405 6.20772L7.4446 5.05037C7.12289 4.60146 6.49817 4.49836 6.04927 4.82007C5.60036 5.14179 5.49726 5.76651 5.81898 6.21541L6.45792 7.10695C5.92702 7.43178 5.434 7.79271 4.98539 8.17708C3.24791 9.6658 2 11.6684 2 13.5C2 15.3316 3.24791 17.3342 4.98539 18.8229C6.76222 20.3453 9.23586 21.5 12 21.5C14.7639 21.5 17.2376 20.3462 19.0145 18.8241C20.7522 17.3355 22 15.333 22 13.5C22 11.667 20.7522 9.66444 19.0145 8.17591C18.6848 7.89346 18.331 7.62368 17.9559 7.37161L18.6253 6.43759C18.947 5.98869 18.844 5.36398 18.3951 5.04225C17.9462 4.72053 17.3214 4.82362 16.9997 5.27252L16.1918 6.39975C15.2102 5.96793 14.1376 5.66528 13.0044 5.55075V3.5ZM12 9.5C9.79086 9.5 8 11.2909 8 13.5C8 15.7091 9.79086 17.5 12 17.5C14.2091 17.5 16 15.7091 16 13.5C16 11.2909 14.2091 9.5 12 9.5Z"
+                                                    fill="#C9C9C9"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="sales-item--img">
+                                    <img
+                                        class="sales-item--img"
+                                        src="./img/ring-4.jpg"
+                                        alt="rings"
+                                    />
+                                    <div class="sales-bottom--btn">
+                                        <button
+                                            class="btn-dots active"
+                                        ></button>
+                                        <button class="btn-dots"></button>
+                                        <button class="btn-dots"></button>
+                                    </div>
+                                </div>
+
+                                <div class="sales-item--price">
+                                    <p>39 200 ₽</p>
+                                </div>
+                                <div class="sales-item--text">
+                                    <p>
+                                        Стильное кольцо из белого золота
+                                        c бриллиантами
+                                    </p>
+                                </div>
+                                <div class="sales-dropdown">
+                                    <div class="select">
+                                        <span class="selected"
+                                            >Белое золото</span
+                                        >
+                                        <div class="caret"></div>
+                                    </div>
+                                    <ul class="menu">
+                                        <li class="active">Белое золото</li>
+                                        <li>Желтое золото</li>
+                                        <li>Серебро</li>
+                                    </ul>
+                                </div>
+
+                                <div class="sales-dropdown">
+                                    <div class="select">
+                                        <span class="selected">Размер: 16</span>
+                                        <div class="caret"></div>
+                                    </div>
+                                    <ul class="menu">
+                                        <li class="active">Размер: 16</li>
+                                        <li>Размер: 18</li>
+                                        <li>Размер: 20</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sales-banner">
+                            <img src="./img/banner-1.jpg" alt="banner-1" />
+                            <img src="./img/banner-2.jpg" alt="banner-2" />
+                            <img src="./img/banner-3.jpg" alt="banner-3" />
+                        </div>
+                    </section>
+
+                    <section class="product">
+                        <div class="product-top">
+                            <div><h2 class="section-title">Товар дня</h2></div>
+                            <div>
+                                <button class="btn btn-sales-prev">
+                                    <img src="./icons/prev.svg" alt="arrow" />
+                                </button>
+                                <button class="btn btn-sales-next">
+                                    <img src="./icons/next.svg" alt="arrow" />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-inner">
+                            <div class="product-inner__img">
+                                <div class="sales-item--icons">
+                                    <span class="sales-icon--new">New</span>
+                                    <span class="sales-icon--sale">Sale</span>
+                                    <span class="sales-icon--hits">Хиты</span>
+                                </div>
+                                <div class="product-img">
+                                    <img src="./img/big-ring.jpg" alt="rings" />
+                                </div>
+                            </div>
+                            <div class="product-inner__descr">
+                                <img src="./icons/stars.svg" alt="stars" />
+                                <span> 4,2</span>
+                                <h2 class="product-title">
+                                    Кольцо из золота с бриллиантами
+                                </h2>
+                                <span class="product-article"
+                                    >Артикул: 1012076</span
+                                >
+                                <div class="product__offer">
+                                    <div class="sales-item--price left">
+                                        <p>22 000 ₽<span>22 000 ₽</span></p>
+                                        <span class="sales-icon--save"
+                                            >-45%</span
+                                        >
+                                    </div>
+                                    <div class="product-timer">
+                                        <div>
+                                            <span class="bold hours">00</span
+                                            ><span>часов</span>
+                                        </div>
+                                        <span>:</span>
+                                        <div>
+                                            <span class="bold minutes">00</span>
+                                            <span>минут</span>
+                                        </div>
+
+                                        <span>:</span>
+                                        <div>
+                                            <span class="bold seconds">00</span>
+                                            <span>секунд</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-color">
+                                    <h2>Цвет</h2>
+                                    <div class="color-inner">
+                                        <div class="color-item">
+                                            <div
+                                                class="color-radius color-1"
+                                            ></div>
+                                        </div>
+                                        <div class="color-item">
+                                            <div
+                                                class="color-radius color-2"
+                                            ></div>
+                                        </div>
+                                        <div class="color-item">
+                                            <div
+                                                class="color-radius color-3"
+                                            ></div>
+                                        </div>
+                                        <div class="color-item">
+                                            <div
+                                                class="color-radius color-4"
+                                            ></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-size">
+                                    <h2 class="product-size-title">Размер</h2>
+                                    <div class="hint">
+                                        <a href="">?</a>
+                                        <div class="tooltip">
+                                            Также как существующая теория
+                                            напрямую зависит от экономической
+                                            целесообразности принимаемых
+                                            решений.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="size-list">
+                                    <button class="btn-size active">
+                                        16,5
+                                    </button>
+                                    <button class="btn-size">17,5</button>
+                                    <button class="btn-size">18,5</button>
+                                    <button class="btn-size">19</button>
+                                    <button class="btn-size">19,5</button>
+                                    <button class="btn-size">19,5</button>
+                                    <button class="btn-size">18,5</button>
+                                    <button class="btn-size">18</button>
+                                    <button class="btn-size">19</button>
+                                    <button class="btn-size">19,5</button>
+                                </div>
+
+                                <div class="size-bottom">
+                                    <div class="size-bottom__btns">
+                                        <button
+                                            class="btn-basket"
+                                            type="submit"
+                                        >
+                                            в корзину
+                                        </button>
+                                        <button class="btn-buy" type="submit">
+                                            купить в 1 клик
+                                        </button>
+                                    </div>
+                                    <div class="size-bottom__social">
+                                        <div>
+                                            <svg
+                                                width="20"
+                                                height="18"
+                                                viewBox="0 0 20 18"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+                                                    fill="#C9C9C9"
+                                                />
+                                            </svg>
+                                            <a href="#">Сохранить</a>
+                                        </div>
+
+                                        <div>
+                                            <svg
+                                                width="20"
+                                                height="20"
+                                                viewBox="0 0 20 20"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <line
+                                                    x1="5.1"
+                                                    y1="10"
+                                                    x2="5.1"
+                                                    y2="17"
+                                                    stroke="#C9C9C9"
+                                                    stroke-width="2.2"
+                                                />
+                                                <line
+                                                    x1="10.1"
+                                                    y1="2"
+                                                    x2="10.1"
+                                                    y2="17"
+                                                    stroke="#C9C9C9"
+                                                    stroke-width="2.2"
+                                                />
+                                                <line
+                                                    x1="15.1"
+                                                    y1="5"
+                                                    x2="15.1"
+                                                    y2="17"
+                                                    stroke="#C9C9C9"
+                                                    stroke-width="2.2"
+                                                />
+                                            </svg>
+
+                                            <a href="#">Сравнить</a>
+                                        </div>
+
+                                        <div>
+                                            <svg
+                                                width="16"
+                                                height="18"
+                                                viewBox="0 0 16 18"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M9.66667 3.58329C9.66667 1.97246 10.9725 0.666626 12.5833 0.666626C14.1942 0.666626 15.5 1.97246 15.5 3.58329C15.5 5.19411 14.1942 6.49996 12.5833 6.49996C11.769 6.49996 11.0327 6.16626 10.5036 5.62816L6.22756 8.21884C6.29649 8.46745 6.33333 8.7294 6.33333 8.99996C6.33333 9.24301 6.3036 9.47912 6.24758 9.70485L10.6009 12.2773C11.1212 11.7949 11.8178 11.5 12.5833 11.5C14.1942 11.5 15.5 12.8058 15.5 14.4166C15.5 16.0274 14.1942 17.3333 12.5833 17.3333C10.9725 17.3333 9.66667 16.0274 9.66667 14.4166C9.66667 14.1736 9.69639 13.9375 9.7524 13.7118L5.39908 11.1394C4.87875 11.6217 4.18214 11.9166 3.41667 11.9166C1.80585 11.9166 0.5 10.6108 0.5 8.99996C0.5 7.38914 1.80585 6.08329 3.41667 6.08329C4.15373 6.08329 4.82695 6.3567 5.34042 6.80763L9.72225 4.15284C9.68578 3.96864 9.66667 3.7782 9.66667 3.58329ZM12.5833 2.33329C11.893 2.33329 11.3333 2.89294 11.3333 3.58329C11.3333 4.27364 11.893 4.83329 12.5833 4.83329C13.2737 4.83329 13.8333 4.27364 13.8333 3.58329C13.8333 2.89294 13.2737 2.33329 12.5833 2.33329ZM3.41667 7.74996C2.72632 7.74996 2.16667 8.30961 2.16667 8.99996C2.16667 9.69031 2.72632 10.25 3.41667 10.25C4.10701 10.25 4.66667 9.69031 4.66667 8.99996C4.66667 8.30961 4.10701 7.74996 3.41667 7.74996ZM12.5833 13.1666C11.893 13.1666 11.3333 13.7263 11.3333 14.4166C11.3333 15.107 11.893 15.6666 12.5833 15.6666C13.2737 15.6666 13.8333 15.107 13.8333 14.4166C13.8333 13.7263 13.2737 13.1666 12.5833 13.1666Z"
+                                                    fill="#C9C9C9"
+                                                />
+                                            </svg>
+
+                                            <a href="#">Поделиться</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="articles">
+                        <div class="articles-top">
+                            <div class="section-title"><h2>Статьи</h2></div>
+                            <div class="articles-top-all">
+                                <a href="#">Читать все &#8594;</a>
+                            </div>
+                        </div>
+                        <div class="articles-inner">
+                            <div class="articles-item">
+                                <img
+                                    src="./img/articles-1.jpg"
+                                    alt="articles-1"
+                                />
+                                <time class="articles-date" datetime="21.09.22"
+                                    >21 сентября 2021</time
+                                >
+                                <a class="articles-link" href="#"
+                                    >Обручальные кольца: тренды 2021</a
+                                >
+                            </div>
+
+                            <div class="articles-item">
+                                <img
+                                    src="./img/articles-2.jpg"
+                                    alt="articles-2"
+                                />
+                                <time class="articles-date" datetime="21.09.22"
+                                    >21 сентября 2021</time
+                                >
+                                <a class="articles-link" href="#"
+                                    >Главные ювелирные тренды года</a
+                                >
+                            </div>
+
+                            <div class="articles-item">
+                                <img
+                                    src="./img/articles-3.jpg"
+                                    alt="articles-3"
+                                />
+                                <time class="articles-date" datetime="21.09.22"
+                                    >21 сентября 2021</time
+                                >
+                                <a class="articles-link" href="#"
+                                    >Жемчуг: 7 малоизвестных фактов о культовом
+                                    украшении</a
+                                >
+                            </div>
+
+                            <div class="articles-item">
+                                <img
+                                    src="./img/articles-4.jpg"
+                                    alt="articles-1"
+                                />
+                                <time class="articles-date" datetime="21.09.22"
+                                    >21 сентября 2021</time
+                                >
+                                <a class="articles-link" href="#"
+                                    >Как отличить золото от подделки:
+                                    10 практических советов1</a
+                                >
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>

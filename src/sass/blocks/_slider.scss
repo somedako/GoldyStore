@@ -1,0 +1,78 @@
+.slider {
+    margin-top: 1.42em;
+
+    &-inner {
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 560px;
+        padding: 0.85em 2.57em 0 9em;
+
+        background-color: #f8f8f8;
+
+        .slider-text {
+            color: $main-color;
+            .slider-suptitle {
+                font-family: 'Prata', serif;
+                font-size: 1.42rem;
+                line-height: 1.1;
+            }
+            .slider-title {
+                margin-top: 0.4em;
+                margin-bottom: 0.92em;
+
+                font-family: 'Prata', serif;
+                font-size: 3.57rem;
+                line-height: 1.4;
+            }
+
+            .slider-btn {
+                padding: 1.42em 4em;
+
+                font-size: 1rem;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: #fff;
+
+                cursor: pointer;
+
+                background-color: $main-color;
+
+                transition: background 0.3s linear;
+
+                &:hover {
+                    background-color: #505050;
+                }
+
+                &:active {
+                    background-color: #000;
+                }
+            }
+        }
+
+        .slider-content {
+            position: relative;
+            overflow: hidden;
+            max-width: 350px;
+            .slider-pictures {
+                position: relative;
+                display: flex;
+                transition: all 1s;
+
+                .slider-img {
+                    max-width: 350px;
+                }
+            }
+            .slider-bottom--btn {
+                display: flex;
+                gap: 16px;
+                position: absolute;
+                bottom: 24px;
+                left: 0;
+                .btn-dots.active {
+                    background-color: $main-color;
+                }
+            }
+        }
+    }
+}

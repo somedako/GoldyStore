@@ -1,0 +1,196 @@
+.sales {
+    &-category {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.5em;
+    }
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+
+        .sales-item {
+            max-width: 24%;
+            border: 1px solid #f0f0f0;
+            padding: 0.87em 0.87em 1.8em 1.71em;
+
+            &__header {
+                display: flex;
+                justify-content: space-between;
+
+                .sales-item--icons {
+                    .sales-icon--sale {
+                        font-size: 0.92rem;
+                        color: #fff;
+                        padding: 0.28em 0.92em;
+                        border-radius: 30px;
+
+                        background-color: #5b8a8f;
+                    }
+
+                    .sales-icon--hits {
+                        font-size: 0.92rem;
+                        color: #fff;
+                        padding: 0.28em 0.92em;
+                        border-radius: 30px;
+
+                        background-color: #e1a661;
+                    }
+                }
+
+                .sales-item--favorites {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                }
+            }
+
+            .sales-item--img {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .sales-bottom--btn {
+                    display: flex;
+                    gap: 16px;
+                    .btn-dots.active {
+                        background-color: $main-color;
+                    }
+                }
+            }
+
+            .sales-item--price {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 2.57em;
+                p {
+                    font-size: 1.28rem;
+                    line-height: 1.1;
+                    font-weight: 400;
+                    color: $main-color;
+
+                    span {
+                        padding-left: 0.71em;
+
+                        font-size: 1rem;
+                        line-height: 1.1;
+                        font-weight: 400;
+                        color: #8f8f8f;
+                        text-decoration: line-through;
+                    }
+                }
+
+                .sales-icon--save {
+                    font-size: 0.92rem;
+                    color: #fff;
+                    padding: 0.28em 0.92em;
+                    border-radius: 30px;
+                    background-color: #e24b33;
+                }
+            }
+
+            .sales-item--text {
+                margin-top: 1.14em;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+
+            .sales-dropdown {
+                margin-top: 1.71em;
+                max-width: 262px;
+                position: relative;
+            }
+        }
+    }
+
+    .sales-banner {
+        margin-top: 8.57em;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        img {
+            margin: 0 auto 20px;
+        }
+    }
+}
+
+.active {
+    background-image: url('../../icons/Vector.svg');
+    background-repeat: no-repeat;
+    background-position: center right 10px;
+}
+
+.caret-rotate {
+    transform: rotate(180deg);
+}
+
+.select-clicked {
+    box-shadow: 0 0 0.8em #26489a;
+}
+
+.caret {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid $main-color;
+    transition: 0.3s;
+}
+
+.select {
+    background-color: $second-color;
+    color: $main-color;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+
+    cursor: pointer;
+    transition: background 0.3s inear;
+
+    &:hover {
+        background: #c9c9c9;
+    }
+}
+
+.menu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+
+    background: #fff;
+    box-shadow: 0px 7px 11px 2px $second-color;
+
+    color: $main-color;
+
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    z-index: 2;
+
+    transition: 0.2s;
+
+    li {
+        padding: 0.7em 0.5em;
+        margin: 0.3em 0;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $second-color;
+        }
+    }
+}
+
+.menu-open {
+    display: block;
+    opacity: 1;
+}
